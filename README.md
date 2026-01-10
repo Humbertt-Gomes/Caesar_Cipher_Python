@@ -8,3 +8,12 @@ Instead of using complex loops, this implementation utilizes the `str.maketrans`
 
 # Key Feature: Bidirectional Shift
 To handle decryption accurately within Python's string slicing, the formula `26 - shift` is applied when `encrypt=False`. This ensures the alphabet rotation is always mathematically sound.
+
+#How to use
+
+Clone the repository.
+
+Run the script:
+python Caesar_Cipher.py
+
+Choose between encryption or decryption and set your shift value.
