@@ -20,3 +20,8 @@ Para testar o projeto localmente, siga estes passos:
 2. **Download**: Você pode baixar o arquivo `Caesar_Cipher.py` diretamente ou clonar este repositório:
    ```bash
    git clone [https://github.com/Humbertt-Gomes/Caesar_Cipher_Python.git](https://github.com/Humbertt-Gomes/Caesar_Cipher_Python.git)
+
+## Testar Online
+Se você não tem o Python instalado, pode executar o código diretamente no seu navegador através do Google Colab:
+
+[Clique aqui para rodar o projeto online] (https://colab.research.google.com/drive/1EzLd-IyTizAOP5mSsFA_IW8_svrgAgOj?usp=sharing)
