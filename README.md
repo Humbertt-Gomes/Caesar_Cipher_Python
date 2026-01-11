@@ -1,18 +1,22 @@
-# Caesar Cipher - Python Implementation
+# Cifra de César - Implementação em Python
 
-This project implements a Caesar Cipher for encryption and decryption. 
-Developed as part of my ADS (Analysis and Systems Development) portfolio.
+Este projeto implementa uma Cifra de César para criptografia e descriptografia, focando em eficiência e interação robusta com o usuário. Desenvolvido como parte do meu portfólio de ADS (Análise e Desenvolvimento de Sistemas).
 
-## Logic & Architecture
+## Lógica e Arquitetura
 
-Instead of using complex loops, this implementation utilizes the `str.maketrans` and `translate` methods for O(n) efficiency. 
+Em vez de usar loops complexos para substituição de caracteres, esta implementação utiliza os métodos nativos `str.maketrans` e `translate` para garantir uma eficiência de  Big O(n).
 
-## Key Feature: Bidirectional Shift
+## Funcionalidades Principais
 
-To handle decryption accurately within Python's string slicing, the formula `26 - shift` is applied when `encrypt=False`. This ensures the alphabet rotation is always mathematically sound.
+* **Deslocamento Bidirecional**: Para lidar com a descriptografia de forma precisa, a fórmula $26 - deslocamento$ é aplicada quando `encrypt=False`. Isso garante que a rotação do alfabeto seja sempre matematicamente correta.
+* **Validação de Entrada**: O sistema utiliza blocos `try/except` para lidar com entradas não inteiras e garante que o valor do deslocamento permaneça dentro do intervalo válido de 1 a 25.
+* **Interação Persistente**: Possui um loop de execução contínuo, permitindo que o usuário realize múltiplas operações em uma única sessão sem a necessidade de reiniciar o script.
 
-# How to use
+##  Como Executar o Projeto
 
-* **Clone the repository:** `git clone https://github.com/Humbertt-Gomes/Caesar_Cipher_Python.git`
-* **Run the script:** `python Caesar_Cipher.py`
-* **Interact:** Choose between encryption or decryption and set your shift value.
+Para testar o projeto localmente, siga estes passos:
+
+1. **Pré-requisitos**: Certifique-se de ter o **Python 3.x** instalado em sua máquina.
+2. **Download**: Você pode baixar o arquivo `Caesar_Cipher.py` diretamente ou clonar este repositório:
+   ```bash
+   git clone [https://github.com/Humbertt-Gomes/Caesar_Cipher_Python.git](https://github.com/Humbertt-Gomes/Caesar_Cipher_Python.git)
