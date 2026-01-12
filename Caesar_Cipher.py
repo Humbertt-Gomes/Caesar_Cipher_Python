@@ -29,6 +29,7 @@ while True:
     encrypted_text = encrypt(text, shift)
     print(f"Resultado:{encrypted_text}")
     question = input ('Quer fazer de novo? (sim/não):').lower()
-    if question == 'não':
+    if question == 'não, n, nao':
         print('Até mais!:)')
+
         break
