@@ -31,5 +31,5 @@ while True:
     question = input ('Quer fazer de novo? (sim/não):').lower()
     if question == 'não, n, nao':
         print('Até mais!:)')
-
         break
+
