@@ -1,6 +1,6 @@
 # Cifra de César - Implementação em Python
 
-Este projeto implementa uma Cifra de César para criptografia e descriptografia, focando em eficiência e interação robusta com o usuário. Desenvolvido como parte do meu portfólio de ADS (Análise e Desenvolvimento de Sistemas).
+Este projeto implementa uma Cifra de César para criptografia e descriptografia, focando em eficiência e interação robusta com o usuário.
 
 ## Lógica e Arquitetura
 
