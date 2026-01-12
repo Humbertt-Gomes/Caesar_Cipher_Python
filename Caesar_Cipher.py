@@ -6,7 +6,6 @@ def caesar(text, shift, encrypt=True):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     if not encrypt:
         shift = 26 - shift
-        shift = shift
     shifted_alphabet = alphabet[shift:] + alphabet[:shift]
     translation_table = str.maketrans(alphabet + alphabet.upper(), shifted_alphabet + shifted_alphabet.upper())
     encrypted_text = text.translate(translation_table)
@@ -21,7 +20,7 @@ while True:
     try:
         shift = int(input('Em quantas casas quer pular a mensagem?'))
         if shift < 1 or shift > 25:
-            print("Escolha apenas um número de 1 à 25.")
+            print("Escolha apenas um número de 1 25.")
             continue          
     except ValueError:
         print('Digite apenas números inteiros (Ex: 1, 2, 3 e etc..)')
@@ -29,9 +28,6 @@ while True:
     encrypted_text = encrypt(text, shift)
     print(f"Resultado:{encrypted_text}")
     question = input ('Quer fazer de novo? (sim/não):').lower()
-    if question == 'não, n, nao':
-        print('Até mais!:)')
-        
+    if question in ['não', 'n', 'nao']:
+        print("Até mais!:)")
         break
-
-
