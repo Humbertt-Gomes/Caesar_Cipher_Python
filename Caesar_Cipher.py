@@ -18,7 +18,7 @@ while True:
     print ('Bem-vindo ao projeto Cifra de Cesar!')
     text = input ('Qual mensagem deseja criptografar?')
     try:
-        shift = int(input('Em quantas casas quer pular a mensagem?'))
+        shift = int(input('Em quantas casas quer pular a mensagem?: '))
         if shift < 1 or shift > 25:
             print("Escolha apenas um número de 1 25.")
             continue          
@@ -27,7 +27,8 @@ while True:
         continue
     encrypted_text = encrypt(text, shift)
     print(f"Resultado:{encrypted_text}")
-    question = input ('Quer fazer de novo? (sim/não):').lower()
+    question = input ('Quer fazer de novo? (sim/não): ').lower()
     if question in ['não', 'n', 'nao']:
         print("Até mais!:)")
         break
+
