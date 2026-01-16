@@ -16,7 +16,7 @@ def decrypt(text, shift):
     return caesar(text, shift, False)
 while True:
     print ('Bem-vindo ao projeto Cifra de Cesar!')
-    text = input ('Qual mensagem deseja criptografar?')
+    text = input ('Qual mensagem deseja criptografar?: ')
     try:
         shift = int(input('Em quantas casas quer pular a mensagem?: '))
         if shift < 1 or shift > 25:
@@ -31,4 +31,5 @@ while True:
     if question in ['não', 'n', 'nao']:
         print("Até mais!:)")
         break
+
 
